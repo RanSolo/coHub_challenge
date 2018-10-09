@@ -1,4 +1,6 @@
-# Cohub Code Challenge
+![inputs](/app/assets/images/logo.svg "Inputs")
+
+# Code Challenge
 
 The purpose of this challenge is to evaluate your skills as a developer.
 
@@ -20,8 +22,18 @@ This project starts with a single data model called Question. A question is made
 | label       | String    | The actual question being asked                                                                                        |
 | position    | Integer   | The order of the question                                                                                              |
 | field_type  | String    | One of `string`, `boolean` or `list`. It can be used by the UI to determine the controls needed to answer the question |
-| options     | Array     | When `list` is used as the `field_type`, this field is used to display the possible options in the list               |
+| options     | Array     | When `list` is used as the `field_type`, this field is used to display the possible options in the list                |
 | multiselect | Boolean   | Can be used by the UI to allow test takers to select more than one option from the list                                |
+
+# Design Specs
+
+Incorporate some or all of the following colors into the questionnaire as you see fit: `#63b05a #3299CC #eb5757 #222020`
+
+Be sure to construct the questionnaire so that it's viewable and usable on both small devices and large devices.
+
+The questionnaire's inputs should look similar to those in the image below. You may create and style these components yourself or use a third party library. Not all of these inputs may be necessary and it's up to you to determine which type of input should be used for each question.
+
+![inputs](/app/assets/images/design-specs.png "Inputs")
 
 # Getting set up
 
@@ -51,7 +63,7 @@ http://localhost:3000/graphiql
 
 # Reference
 
-* GraphQL Ruby - http://graphql-ruby.org/
-* Apollo/React GraphQL Client - https://www.apollographql.com/docs/react/
-* React Docs - https://reactjs.org/docs/hello-world.html
-* Rails Docs - http://guides.rubyonrails.org/
+- GraphQL Ruby - http://graphql-ruby.org/
+- Apollo/React GraphQL Client - https://www.apollographql.com/docs/react/
+- React Docs - https://reactjs.org/docs/hello-world.html
+- Rails Docs - http://guides.rubyonrails.org/
