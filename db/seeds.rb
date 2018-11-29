@@ -24,3 +24,5 @@ questions = [
 questions.each_with_index do |opts, index|
   Question.create(opts.merge(position: index))
 end
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
