@@ -1,5 +1,5 @@
-Types::Quiz = GraphQL::ObjectType.define do
-  name "Quiz"
+Types::QuizType = GraphQL::ObjectType.define do
+  name "QuizType"
 
   field :id, types.ID
   field :answers, types.String
