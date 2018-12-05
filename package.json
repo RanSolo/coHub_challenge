@@ -1,25 +1,13 @@
 {
-  "name": "list-of-ingredients",
-  "private": true,
-  "engines": {
-    "node": "8.9.4",
-    "yarn": "1.6.0"
-  },
-  "scripts": {
-    "build": "yarn --cwd client install && yarn --cwd client build",
-    "deploy": "cp -a client/build/. public/",
-    "heroku-postbuild": "yarn build && yarn deploy"
-  }
-}
-{
   "name": "cohub-code-challenge",
   "private": true,
   "engines": {
     "node": "8.9.4",
-    "yarn": "1.6.0"
+    "npm": "6.4.1"
   },
   "dependencies": {
     "@rails/webpacker": "^3.4.0",
+    "ajv": "^6.6.1",
     "apollo-client-preset": "^1.0.8",
     "babel-preset-react": "^6.24.1",
     "graphql": "^0.13.2",
@@ -30,7 +18,7 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
     "build": "yarn --cwd client install && yarn --cwd client build",
