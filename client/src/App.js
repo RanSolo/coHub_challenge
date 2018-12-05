@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ApolloClient from 'apollo-boost';
-import {ApolloProvider}  from 'react-apollo';
-import Questions from './components/Questions';
+import { ApolloProvider }  from 'react-apollo';
+import CreateQuiz from './components/Create_Quiz';
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,12 +18,13 @@ class App extends Component {
             <img src={logo}
                  className="App-logo"
                  alt="CoHub logo"
-                 style={{ display: 'block', margin: 'auto' }} />
+                 style={{ display: 'block', margin: 'auto' }}
+            />
           </div>
           <div className="row">
             <h2 style={{ display: 'block', margin: 'auto' }}>Quiz</h2>
           </div>
-          <Questions />
+          <CreateQuiz />
         </div>
       </ApolloProvider>
     );
