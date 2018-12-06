@@ -6,7 +6,6 @@ class QuestionnaireController < ApplicationController
   def create
     @quiz = Quiz.new(quiz_params)
     @quiz.save
-
   end
 
   # Allowed Parameters
