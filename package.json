@@ -22,7 +22,7 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "build": "npm --cwd client install && npm --cwd client start",
+    "build": "npm client install && npm client start",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
   }
