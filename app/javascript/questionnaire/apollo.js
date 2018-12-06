@@ -12,6 +12,10 @@ const link = new HttpLink({
   credentials: "same-origin"
 });
 
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
+});
+
 const sanitizeMutationVariables = new ApolloLink((operation, forward) => {
   const definition = getMainDefinition(operation.query);
   if (definition.operation === "mutation") {
