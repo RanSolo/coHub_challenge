@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { ApolloClient } from 'apollo-client';
+import { ApolloClient } from 'apollo-client ';
 import { ApolloProvider }  from 'react-apollo';
 import CreateQuiz from './components/Create_Quiz';
 import logo from './logo.svg';
 import './App.css';
 
 const client = new ApolloClient({
-  uri: 'https://cryptic-meadow-58744.herokuapp.com/graphql'
+  uri: '/graphql'
 });
 
 class App extends Component {
