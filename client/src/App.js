@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ApolloClient } from 'apollo-client ';
+import { ApolloClient } from 'apollo-boost';
 import { ApolloProvider }  from 'react-apollo';
 import CreateQuiz from './components/Create_Quiz';
 import logo from './logo.svg';
