@@ -1,4 +1,4 @@
-import { ApolloClient } from "apollo-client";
+import { ApolloClient } from "apollo-boost";
 import { HttpLink } from "apollo-link-http";
 import { ApolloLink } from "apollo-link";
 import {
@@ -7,9 +7,15 @@ import {
 } from "apollo-cache-inmemory";
 import { getMainDefinition } from "apollo-utilities";
 
+const cors = require('cors');
+
 const link = new HttpLink({
   uri: "/graphql",
   credentials: "same-origin"
+});
+
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
 });
 
 const sanitizeMutationVariables = new ApolloLink((operation, forward) => {

@@ -2,7 +2,8 @@
   "name": "cohub-code-challenge",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.4.0",
+    "@rails/webpacker": "3.4.0",
+    "ajv": "^6.6.1",
     "apollo-client-preset": "^1.0.8",
     "babel-preset-react": "^6.24.1",
     "current-version": "^0.1.4",
@@ -11,10 +12,11 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-apollo": "^2.1.3",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "webpack": "^4.27.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "3.1.6"
   },
   "engines": {
     "node": "9.10.0",
