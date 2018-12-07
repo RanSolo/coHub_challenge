@@ -14,7 +14,7 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "3.1.6"
   },
   "engines": {
     "node": "9.10.0",
