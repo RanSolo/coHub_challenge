@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3000/graphql'
+  uri: 'https://cryptic-meadow-58744.herokuapp.com/graphql'
 });
 
 class App extends Component {
