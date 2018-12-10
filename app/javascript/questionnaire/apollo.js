@@ -7,10 +7,8 @@ import {
 } from "apollo-cache-inmemory";
 import { getMainDefinition } from "apollo-utilities";
 
-const cors = require('cors');
-
 const link = new HttpLink({
-  uri: "/graphql",
+  uri: "http://loalhost:3000/graphql",
   credentials: "same-origin"
 });
 

@@ -2,7 +2,7 @@ Types::QueryType = GraphQL::ObjectType.define do
   name 'Query'
 
   # Add root-level fields here.
-  field :ListQuestions, types[Types::Question] do
+  field :Questions, types[Types::Question] do
     description 'Returns a list of questions'
     resolve ->(_, _, _) { Question.order(position: :asc) }
   end

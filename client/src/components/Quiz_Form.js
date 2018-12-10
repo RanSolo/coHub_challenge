@@ -33,7 +33,7 @@ export default function QuizForm({data}) {
           }
         >
           <StrappedInput label={"participant_name"} />
-          { data.ListQuestions.map(question => (
+          { data.Questions.map(question => (
             <section key={question.label}>
               <Question question={question} />
             </section>

@@ -24,8 +24,9 @@
     "npm": "6.4.1"
   },
   "scripts": {
-    "build": "npm install && npm start",
+      "build": "cd client/ && npm install && npm start",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
-  }
+  },
+  "proxy": "http://localhost:3000"
 }

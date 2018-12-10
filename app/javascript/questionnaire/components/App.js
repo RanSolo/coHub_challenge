@@ -23,8 +23,8 @@ export default class App extends React.Component {
 }
 
 const LIST_QUESTIONS = gql`
-  query ListQuestions {
-    questions: ListQuestions {
+  query Questions {
+    questions: Questions {
       id
       label
       position

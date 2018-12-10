@@ -6,7 +6,7 @@ import QuizForm from './Quiz_Form';
 // query that pulls the questions from graphql for display in the quiz
 const QUESTIONS_QUERY = gql`
   query QuestionsQuery{
-    ListQuestions {
+    Questions {
       position
       label
       field_type
