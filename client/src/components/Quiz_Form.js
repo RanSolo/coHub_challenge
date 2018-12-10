@@ -28,7 +28,9 @@ export default function QuizForm({data}) {
             }}) }
           }
         >
-          <StrappedInput label={"participant_name"} />
+          <div className="form-group">
+            <TextField label="Participant Name" name="participant_name" className="form-control" />
+          </div>
           { data.Questions.map(question => (
             <section key={question.label}>
               <Question question={question} />
