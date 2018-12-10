@@ -1,7 +1,7 @@
 questions = [
   {
     label: 'How many years have you been developing software?',
-    field_type: 'string'
+    field_type: 'number'
   },
   {
     label: 'Are you a good developer?',

@@ -18,6 +18,8 @@ export default function Question({
           return <StrappedInput label={label} />
         } else if (field_type === "list") {
           return <StrappedMulti label={label} options={options} />
+        } else if (field_type === "number") {
+          return <StrappedSelect label={label} options={[...Array(16).keys()]} />
         }
       })()}
     </div>
