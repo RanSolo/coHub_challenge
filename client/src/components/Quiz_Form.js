@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 import StrappedInput from './form_groups/Strapped_Input';
 import { Mutation } from 'react-apollo';
 import Question from './Question';
-import { Form, SubmitField } from 'react-components-form';
+import { Form, TextField, SubmitField} from 'react-components-form';
 
 // Mutation that creates a quiz on submission of the form
 const CREATE_QUIZ = gql`
@@ -17,9 +17,7 @@ const CREATE_QUIZ = gql`
 `;
 
 export default function QuizForm({data}) {
-  console.log(data)
   return (
-
     <Mutation mutation={CREATE_QUIZ}>
       {createQuiz => (
         <Form

@@ -5,9 +5,9 @@ import StrappedCheckbox from './form_groups/Strapped_Checkbox';
 import StrappedMulti from './form_groups/Strapped_Multi';
 
 export default function Question({
-  question: { position, label, field_type, options, multiselect }, handleChange
-  }) {
-  return (
+  question: { position, label, field_type, options, multiselect }
+}) {
+  return(
     <div>
       {(() => {
         if (field_type === "select") {
@@ -19,7 +19,8 @@ export default function Question({
         } else if (field_type === "list") {
           return <StrappedMulti label={label} options={options} />
         } else if (field_type === "number") {
-          return <StrappedSelect label={label} options={[...Array(16).keys()]} />
+          return <StrappedSelect label={label}
+                                 options={[...Array(16).keys(), '15+']} />
         }
       })()}
     </div>

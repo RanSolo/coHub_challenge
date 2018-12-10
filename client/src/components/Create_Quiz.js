@@ -17,12 +17,6 @@ const QUESTIONS_QUERY = gql`
 `;
 
 export class CreateQuiz extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      participant_name: '', answers: ''
-    }
-  }
   render() {
     return (
       <div key="container">
