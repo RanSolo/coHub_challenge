@@ -16,12 +16,10 @@ const CREATE_QUIZ = gql`
   }
 `;
 
-const submitMethod = (model) => {
- alert(`Submitted: ${JSON.stringify(model)}` );
-}
-
 export default function QuizForm({data}) {
+  console.log(data)
   return (
+
     <Mutation mutation={CREATE_QUIZ}>
       {createQuiz => (
         <Form
