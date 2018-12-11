@@ -20215,3 +20215,11 @@ Processing by GraphqlController#execute as */*
 Completed 200 OK in 91ms (Views: 12.9ms | ActiveRecord: 3.0ms)
 
 
+Started POST "/graphql" for 127.0.0.1 at 2018-12-11 08:11:45 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName"=>"QuestionsQuery", "variables"=>{}, "query"=>"query QuestionsQuery {\n  Questions {\n    position\n    label\n    field_type\n    options\n    multiselect\n    __typename\n  }\n}\n", "graphql"=>{"operationName"=>"QuestionsQuery", "variables"=>{}, "query"=>"query QuestionsQuery {\n  Questions {\n    position\n    label\n    field_type\n    options\n    multiselect\n    __typename\n  }\n}\n"}}
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."position" ASC[0m
+Completed 200 OK in 104ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
